@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and drop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="drag-wrapper">
+        <h3>Example 1</h3>
+        <div id="elements-container" class="drag-items">
+            <div>
+                <div class="draggable-element d-1">Drag 1</div>
+                <div class="draggable-element d-2">Drag 2</div>
+                <div class="draggable-element d-3">Drag 3</div>
+                <div class="draggable-element d-4">Drag 4</div>
+            </div>
+            <div>
+                <div class="draggable-element d-1">Drag 1</div>
+                <div class="draggable-element d-2">Drag 2</div>
+                <div class="draggable-element d-3">Drag 3</div>
+                <div class="draggable-element d-4">Drag 4</div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/drag-arrange.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.draggable-element').arrangeable();
+
+        });
+    </script>
+</body>
+
+</html>
